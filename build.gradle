@@ -26,11 +26,12 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 	compile('org.springframework.boot:spring-boot-starter-data-rest')
-	compile('org.springframework.boot:spring-boot-starter-quartz')
+//	compile('org.springframework.boot:spring-boot-starter-quartz')
 	compile('org.springframework.boot:spring-boot-starter-security')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.springframework.boot:spring-boot-starter-websocket')
-	compile('org.springframework.kafka:spring-kafka')
+	compile("org.postgresql:postgresql:9.4-1206-jdbc42")
+//	compile('org.springframework.kafka:spring-kafka')
 	compile group: 'org.nextrtc.signalingserver', name: 'nextrtc-signaling-server', version: '1.0.0-RC6'
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('org.springframework.security:spring-security-test')
